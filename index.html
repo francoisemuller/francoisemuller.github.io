@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booster vos ventes avec une stratégie marketing gagnante</title>
+    <meta name="description" content="Découvrez comment booster vos ventes avec une stratégie marketing gagnante. Réservez votre consultation gratuite dès aujourd'hui.">
+    <meta name="keywords" content="Marketing, Ventes, Stratégie marketing, Consultation gratuite">
+    <meta name="author" content="Françoise Muller">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="entete">
+        <div class="layout-entete-nav">
+            <div class="burger-menu">
+                <img src="img/burger-open.png" alt="Menu" id="burger-open">
+                <img src="img/burger-close.png" alt="Fermer" id="burger-close" style="display: none;">
+            </div>
+            <nav id="nav-menu">
+                <a href="https://ouisticom.fr">ACCUEIL</a>
+                <a href="https://ouisticom.fr/service">SERVICES</a>
+                <a href="https://ouisticom.fr/a-propos">A PROPOS</a>
+                <a href="https://calendly.com/francoisemuller-sophiantipolis">PRENDRE RDV</a>
+            </nav>
+            <div class="logo">
+                <a href="https://ouisticom.fr"><img src="img/logo-ouisticom.png" alt="Logo de ouisticom, stratégie marketing digital, conseils et accompagnement"></a>
+            </div>
+        </div>
+    </header>
+    <main class="contenu">
+        <section class="hero">
+            <div class="text-content">
+                <h1>Booster vos ventes avec <strong>une stratégie marketing gagnante</strong></h1>
+                <h2><strong>Réservez dès aujourd'hui</strong> votre consultation de 30 minutes offerte</h2>
+                <a href="https://calendly.com/francoisemuller-sophiantipolis" class="cta-button" target="_blank">Prenez rendez-vous</a>
+            </div>
+            <img src="img/Francoise-MULLER- 01.jpg" alt="Portrait de Françoise Muller">
+        </section>
+        <section class="etapes">
+            <h3>Les 6 étapes indispensables à connaître pour bien démarrer</h3>
+            <ul>
+                <li>Analyse du marché</li>
+                <li>Définition des objectifs</li>
+                <li>Élaboration de la stratégie</li>
+                <li>Mise en œuvre des actions</li>
+                <li>Suivi des performances</li>
+                <li>Ajustements et optimisations</li>
+            </ul>
+        </section>
+        <section class="formulaire">
+            <h2>Prendre rendez-vous</h2>
+            <form>
+                <input type="text" placeholder="Nom" name="nom" required>
+                <input type="email" placeholder="Email" name="email" required>
+                <textarea placeholder="Message" name="message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+    <footer class="pied-page">
+        <div class="contact">
+            <h3>Contact</h3>
+            <p>OuistiCom</p>
+            <p>Tel: <a href="tel:+33624761919">06 24 76 19 19</a></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.getElementById('burger-open').addEventListener('click', function() {
+            document.getElementById('nav-menu').style.display = 'flex';
+            this.style.display = 'none';
+            document.getElementById('burger-close').style.display = 'block';
+        });
+
+        document.getElementById('burger-close').addEventListener('click', function() {
+            document.getElementById('nav-menu').style.display = 'none';
+            this.style.display = 'none';
+            document.getElementById('burger-open').style.display = 'block';
+        });
+    </script>
+</body>
+</html>

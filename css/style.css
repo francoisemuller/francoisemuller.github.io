@@ -1,0 +1,405 @@
+/*#  codes couleurs et typos
+     font-family:'raleway'sans-serif;
+      font-family: 'open sans'sans-serif;
+
+     Couleurs
+     Orange: #F27C22 
+     bleu: #01184E
+     beige: #FFD18C
+     blanc: #FFFFFF
+     noir: #00000
+
+*/
+/* Style généraux */ 
+body{ 
+    font-family: 'open sans'sans-serif;
+    margin:0;
+}
+h2{
+    font-family:'raleway'sans-serif;
+   
+}
+img{
+    width: 60%;
+}
+
+
+/* Styles de sections */
+header {
+    background-color:  #FFD18C ;
+}
+
+.layout-entete-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+nav {
+    background-color: #01184E;
+    text-align: center; /* Centre les liens de navigation */
+    padding: 1em 0; /* Ajoute un peu de padding autour des liens */
+    width: 100%;
+}
+
+nav a {
+    color: white; /* Change la couleur en blanc */
+    text-decoration: none;
+    display: block;
+    margin: 0.5em 0; /* Ajoute de l'espace entre les liens */
+    font-size: 0.8em; /* Réduit la taille des liens */
+}
+
+nav a:hover {
+    color: #F27C22; /* Change la couleur en orange au survol */
+}
+
+/* Styles pour le logo */
+.logo {
+    background-color: #01184E; /* Ajoute une couleur de fond bleue */
+    padding: 10px; /* Ajoute du padding autour du logo */
+    
+    margin: 20px 0; /* Ajoute de l'espace au-dessus et en dessous */
+    width: 100%;
+}
+
+
+.logo img {
+    max-width: 400px; /* Réduit la largeur maximale du logo */
+    height: auto; /* Maintient le ratio d'aspect du logo */
+    display: block;
+    margin: 0 auto; /* Centre le logo horizontalement */
+}
+
+/* Styles pour la section hero */
+.hero {
+    padding: 20px; /* Ajoute du padding autour de la section */
+    margin: 20px; /* Ajoute des marges autour de la section */
+    border-radius: 30px; /* Ajoute des bordures arrondies */
+    background-color: #2b22911e; /* Ajoute une couleur de fond légère */
+    display: block; /* Par défaut, tout est empilé verticalement */
+}
+
+
+.hero h1, .hero h2 {
+    text-align: center; /* Centre le texte */
+}
+/* Styles de base pour la section hero sur mobile */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre les éléments verticalement et horizontalement */
+    text-align: center;
+}
+
+
+
+/* Styles pour les titres dans la section hero */
+.hero h1 {
+    color: #01184E ; /* bleu */
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800; /* Graisse 800 */
+}
+.hero h1 strong {
+    color: #F27C22; /* Orange pour le texte mis en évidence */
+    font-weight: 800; /* Assure que le texte reste en gras */
+}
+
+
+
+.hero h2 {
+    color: #01184E; /* Bleu */
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600; /* Graisse 600 */
+    font-size: 1em; /* Plus petit */
+}
+.hero h2 strong {
+    color: #F27C22; /* Orange pour le texte mis en évidence */
+    font-weight: 800; /* Assure que le texte reste en gras, bien que <strong> le fasse déjà */
+}
+
+/* Styles pour le bouton d'appel à l'action */
+.cta-button {
+    display: block;
+    width: auto; /* Laisse la largeur s'ajuster automatiquement */
+    max-width: 200px; /* Limite la largeur maximale du bouton */
+    margin: 20px auto; /* Centre le bouton horizontalement et ajoute de l'espace au-dessus et en dessous */
+    padding: 10px 20px; /* Ajoute du padding à l'intérieur du bouton */
+    background-color: #F27C22; /* Fond orange */
+    color: white; /* Texte blanc */
+    border: none; /* Supprime les bordures par défaut */
+    border-radius: 30px; /* Bordures arrondies */
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600; /* Graisse 600 */
+    font-size: 1em; /* Taille de police */
+    cursor: pointer; /* Change le curseur au survol */
+    text-align: center; /* Centre le texte à l'intérieur du bouton */
+    text-decoration: none; /* Supprime la décoration de texte */
+  }
+
+.cta-button:hover {
+    background-color: #E0691E; /* Change de couleur au survol */
+}
+.cta-button:hover {
+    background-color: #E0691E;
+    color:  #01184E; /* Texte devient bleu au survol */
+}
+.etapes {
+    display: block;
+    background-color: #01184E; /* Couleur de fond bleu pour toute la section */
+    text-align: center; /* Centre le contenu textuel dans .etapes */
+    color: #FFFFFF; /* Couleur du texte blanc pour tous les textes à l'intérieur de .etapes */
+    font-family: 'Open Sans', sans-serif; /* Police Open Sans pour le texte */
+    padding: 40px 20px; /* Ajoute du padding à la fois en haut et en bas de la section */
+    margin: 20px 0; /* Ajoute une marge extérieure pour séparer des autres sections */
+}
+
+.etapes h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600; /* Raleway en gras 600  */
+    color: #F27C22; /* Couleur orange pour le titre */
+    margin-bottom: 30px; /* Augmente l'espace en dessous du titre pour mieux séparer de la liste */
+    padding-top: 20px; /* Ajoute de l'espace au-dessus du titre */
+}
+
+.etapes ul {
+    padding: 0;
+    list-style-type: none; /* Supprime les puces de la liste */
+    margin: 0 auto; /* Centre la liste horizontalement */
+    width: 80%; /* Limite la largeur de la liste pour une meilleure lisibilité */
+    padding-bottom: 20px; /* Ajoute un padding en bas de la liste pour un meilleur espacement */
+   }
+.etapes ul li {
+    background-color: #F27C22; /* Couleur de fond orange  pour les éléments li */
+    color: white; /* Texte blanc pour une meilleure lisibilité */
+    padding: 10px 20px; /* Ajoute de l'espace autour du texte */
+    margin: 10px 0; /* Espacement vertical entre les éléments li */
+    border-radius: 30px; /* Bordures arrondies à 30px */
+    list-style-type: none; /* Supprime les puces de liste */
+    box-sizing: border-box; /* Inclut padding et border dans la largeur calculée */
+    max-width: 600px; /* Largeur maximale pour éviter que les éléments soient trop étendus */
+}
+/* Styles généraux pour le formulaire */
+.formulaire {
+    max-width: 800px; /* Limite la largeur du formulaire */
+    margin: 20px auto; /* Centre le formulaire et ajoute de l'espace autour */
+    padding: 20px;
+    background-color: #f8f9fa; /* Couleur de fond légère */
+    border-radius: 10px; /* Bords arrondis */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Ombre subtile */
+}
+
+/* Stylisation des inputs */
+.formulaire input, .formulaire textarea {
+    width: 100%; /* Utilise toute la largeur disponible */
+    padding: 10px; /* Padding confortable pour la saisie */
+    margin-bottom: 10px; /* Espace entre chaque champ */
+    border: 1px solid #ccc; /* Bordure subtile */
+    border-radius: 5px; /* Bords légèrement arrondis */
+    box-sizing: border-box; /* Inclut padding et border dans la largeur */
+}
+
+/* Styles spécifiques pour le bouton d'envoi */
+.formulaire button {
+    width: 100%; /* Assure que le bouton est aussi large que les champs */
+    padding: 12px 20px; /* Padding plus généreux pour une meilleure interaction */
+    background-color: #01184E; /* Couleur de fond bleue pour correspondre à votre charte */
+    color: white; /* Texte blanc pour la lisibilité */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Bords arrondis */
+    cursor: pointer; /* Indique qu'il s'agit d'un élément cliquable */
+    transition: background-color 0.3s; /* Transition pour un effet au survol */
+}
+
+.formulaire button:hover {
+    background-color: #F27C22; /* Changement de couleur au survol */
+}
+.formulaire {
+    font-family: 'Open Sans', sans-serif; /* Assure la cohérence avec le reste du site */
+}
+
+.formulaire h2 {
+    text-align: center; /* Centre le titre du formulaire */
+    color: #01184E; /* Couleur de texte pour harmoniser avec le reste */
+    margin-bottom: 20px; /* Espace après le titre */
+}
+@media (max-width: 600px) {
+    .formulaire {
+        padding: 10px;
+    }
+
+    .formulaire input, .formulaire textarea, .formulaire button {
+        width: 100%; /* Ajuste la largeur pour les petits écrans */
+    }
+}
+.pied-page .contact a {
+    color: #01184E; /* Couleur du texte */
+    text-decoration: none; /* Supprime le soulignement par défaut */
+  }
+  
+  .pied-page .contact a:hover {
+    text-decoration: underline; /* Ajoute un soulignement au survol pour indiquer la possibilité de cliquer */
+  }
+  
+  .pied-page .contact {
+    text-align: center; /* Centre tout le texte dans la div .contact */
+    padding: 20px; /* Ajoute un peu de padding pour l'espacement interne */
+    margin: 0 auto; /* Centre la div .contact horizontalement s'il y a besoin */
+  }
+  
+  .pied-page .contact h3,
+  .pied-page .contact p,
+  .pied-page .contact {
+    margin: 0 0 5px 0; /* Réduit l'espace entre les éléments pour les rapprocher, 0 en haut, 0 à droite, 5px en bas, 0 à gauche */
+    display: block; /* Assure que chaque élément s'affiche sur une nouvelle ligne */
+  }
+  
+  .pied-page .contact a {
+    color: #01184E; /* Couleur du lien */
+    text-decoration: none; /* Supprime le soulignement du lien */
+    font-weight: bold; /* Rend le texte du lien en gras */
+  }
+  
+  .pied-page .contact a:hover {
+    text-decoration: underline; /* Ajoute un soulignement au survol */
+  }
+  
+  /* Ajout des médias queries pour les petits écrans */
+  @media (max-width: 768px) {
+    .pied-page .contact {
+      display: block; /* Assure que le pied de page est affiché sur les petits écrans */
+      padding: 10px; /* Ajuste le padding pour les petits écrans */
+      margin: 0 auto; /* Centre le contenu sur les petits écrans */
+    }
+  
+    .pied-page .contact h3,
+    .pied-page .contact p {
+      font-size: 14px; /* Ajuste la taille du texte pour les petits écrans */
+    }
+  
+    .pied-page .contact a {
+      font-size: 14px; /* Ajuste la taille des liens pour les petits écrans */
+    }
+  }
+  @media screen and (min-width: 600px) {
+    .hero {
+       display: grid;
+       grid-template-columns: 1fr 1fr; /* Crée une grille avec deux colonnes de taille égale */
+       align-items: center; /* Centre les éléments verticalement */
+       justify-items: center; /* Centre les éléments horizontalement */
+    }
+}
+   
+ /* Media query pour les écrans moyens, ajustement pour une disposition en ligne */
+@media screen and (max-width: 768px) {
+    .hero {
+        grid-template-columns: 1fr; /* Une seule colonne pour le mobile */
+        justify-items: center;
+    }
+
+    .hero .text-content, .hero img {
+        grid-column: 1; /* Met le texte et l'image dans la même colonne */
+        max-width: 90%; /* Réduit la largeur pour éviter les débordements */
+        margin: 0 auto; /* Centrage automatique */
+    }
+}
+/* Media query pour les grands écrans */
+@media screen and (min-width: 1024px) {
+    .hero {
+        display: grid; 
+        grid-template-columns: 1fr auto 1fr; /* Ajoute une colonne 'auto' pour le contenu et '1fr' de chaque côté pour le centrage */
+        align-items: center; /* Alignement vertical au centre */
+        justify-items: center; /* Assure le centrage horizontal des éléments dans leurs cellules */
+        text-align: center; /* Centrage du texte à l'intérieur des cellules de la grille */
+        gap: 20px; /* Espace entre les colonnes */
+        padding: 20px; /* Ajout de padding pour éviter que le contenu touche les bords */
+    }
+
+    .hero .text-content, .hero img {
+        grid-column: 2; /* Positionne le texte et l'image dans la colonne du milieu */
+    }
+
+    .hero img {
+        max-width: 100%; /* Assure que l'image ne dépasse pas sa grille */
+        border-radius: 30px; /* Bordures arrondies pour l'image */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre pour la photo */
+    }
+}
+/* Media query pour les grands écrans */
+@media screen and (min-width: 1024px) {
+    .etapes ul {
+        width: 30%; /* Ajuste la largeur pour les grands écrans */
+    }
+    .etapes ul li {
+        max-width: 50%; /* Réduit la largeur maximale des éléments li sur les grands écrans */
+        margin: 10px auto; /* Centre les éléments li horizontalement */
+    }
+
+    .etapes h3 {
+        text-align: center; /* Centre le texte horizontalement */
+        width: 50%; /* Assure que le h3 prend toute la largeur disponible */
+        margin: 20px auto; /* Ajoute de l'espace autour du titre et le centre */
+        padding: 10px 0; /* Ajoute un peu de padding pour l'espacement vertical */
+    }
+
+}
+
+/* Styles pour le burger menu */
+.burger-menu {
+    display: none; /* Caché par défaut */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#burger-open,
+#burger-close {
+    width: 30px;
+    height: 30px;
+}
+
+/* Styles pour le menu navigation */
+#nav-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .burger-menu {
+        display: block; /* Affiche le menu burger sur mobile */
+    }
+
+    #nav-menu {
+        display: none; /* Cache le menu par défaut sur mobile */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #01184E;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    #nav-menu a {
+        margin: 10px 0;
+        color: white;
+        text-decoration: none;
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 769px) {
+    #burger-open,
+    #burger-close {
+        display: none; /* Cache le burger menu sur les écrans plus grands */
+    }
+
+    #nav-menu {
+        display: flex; /* Affiche le menu en ligne sur les grands écrans */
+    }
+}
